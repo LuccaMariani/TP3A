@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario Alta Empleado</title>
+</head>
+<body>
+    <h2>Alta de Empleados</h2>
+    <form>
+      
+        <table align="center">
+            <tr>
+                <td><h4>Datos Personales</h4></td>
+            </tr>
+            <tr>
+                <td>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>DNI:</label>
+                    <input type="number" id="txtDni" min="1000000" max="55000000" required>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <label>Nombre:</label>
+                    <input type="text" id="txtNombre" pattern="[a-zA-Z]{2,254}" required>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label>Apellido:</label>
+                    <input type="text" id="txtApellido" pattern="[a-zA-Z]{2,254}" required>
+                </td>
+            </tr>
+            <tr>
+                <!-- style="text-align:left;padding-left:15px" -->				
+                <td>
+                    <label>Sexo:</label>
+
+                    <select id="cboSexo" required> 
+                        <option value="">Seleccione</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                        
+                    </select>		
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h4>Datos Laborales</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <hr>    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Legajo:</label>
+                    <input type="number" id="txtLegajo" min="100" max="550" style="margin-left: 23%;" required>
+                </td>
+            </tr>
+            <tr>
+                <td>    
+                    <label>Sueldo:</label>
+                    <input type="number" id="txtSueldo" min="8000" max="55000000" required>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Turno:</label>
+
+                    <br>
+                    <input type="radio" id="6" value="Mañana" >
+                    <label for="1">Mañana</label>
+                    <br>
+                    <input type="radio" id="7" value="Tarde">
+                    <label for="2">Tarde</label>
+                    <br>
+                    <input type="radio" id="8" value="Noche">
+                    <label for="3">Noche</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="right">
+                    <br>
+                    <input type="reset" id="btnLimpiar" value="Limpiar">
+                    <br>
+                    <input type="submit" id="btnEnviar" value="Enviar">
+                </td>
+            </tr>
+        </table>
+
+
+
+    </form>
+
+</body>
+</html>
